@@ -73,3 +73,25 @@ yarn-error.log
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
+
+# Environment files (if you use them)
+.env
+.env.*
+!.env.example
+
+# Editor specific
+.vscode/
+*.swp
+*.swo
+
+# Temporary files
+*.log
+*.tmp
+.tmp/
+
+# iOS specific
+ios/.xcode.env.local
+ios/Pods/
+
+# Android specific
+android/app/release/
