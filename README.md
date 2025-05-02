@@ -1,97 +1,133 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# Daily Mood Tracker
 
-# Getting Started
+A simple and intuitive iOS app to track and document your daily mood patterns.
 
-> **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
+## Features
 
-## Step 1: Start Metro
+- Daily mood logging with customizable emotions
+- Visual mood history and trends
+- Optional notes for each mood entry
+- Private and secure data storage
+- Clean, minimalist interface
 
-First, you will need to run **Metro**, the JavaScript build tool for React Native.
+## Technologies
 
-To start the Metro dev server, run the following command from the root of your React Native project:
+- React Native
+- TypeScript
+- iOS 15.0+
+- Android 8.0+
 
-```sh
-# Using npm
-npm start
+## Development Setup
 
-# OR using Yarn
-yarn start
+1. Prerequisites:
+   - Node.js (v14 or newer)
+   - npm or yarn
+   - Xcode (for iOS development)
+   - Android Studio (for Android development)
+   - Ruby (for iOS dependencies)
+
+2. Initial Setup:
+   ```bash
+   # Clone the repository
+   git clone <repository-url>
+   cd MyFirstApp
+
+   # Install dependencies
+   npm install
+   # or
+   yarn install
+
+   # Install iOS dependencies
+   cd ios
+   bundle install
+   bundle exec pod install
+   cd ..
+   ```
+
+3. Running the App:
+   ```bash
+   # For iOS
+   npm run ios
+   # or
+   yarn ios
+
+   # For Android
+   npm run android
+   # or
+   yarn android
+   ```
+
+## Git Workflow
+
+### Initial Setup
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   cd MyFirstApp
+   ```
+
+2. Create and switch to a new branch for your feature:
+   ```bash
+   git checkout -b feature/your-feature-name
+   ```
+
+### Daily Workflow
+1. Before starting work, pull the latest changes:
+   ```bash
+   git checkout main
+   git pull origin main
+   git checkout your-branch-name
+   ```
+
+2. Make your changes and commit them:
+   ```bash
+   # Stage changes
+   git add .
+
+   # Commit changes with a descriptive message
+   git commit -m "Description of your changes"
+   ```
+
+3. Push your changes to remote:
+   ```bash
+   git push origin your-branch-name
+   ```
+
+4. Create a Pull Request on GitHub/GitLab when ready to merge
+
+### Best Practices
+- Write clear, descriptive commit messages
+- Keep commits focused and atomic
+- Regularly pull from the main branch to stay up to date
+- Never commit sensitive information or large binary files
+- Use `.gitignore` to exclude unnecessary files (already configured)
+
+### Common Git Commands
+```bash
+# Check status of your changes
+git status
+
+# View commit history
+git log
+
+# Discard changes in a file
+git checkout -- <file>
+
+# Create and switch to a new branch
+git checkout -b branch-name
+
+# Switch to an existing branch
+git checkout branch-name
+
+# Merge main branch into your feature branch
+git checkout your-branch
+git merge main
 ```
 
-## Step 2: Build and run your app
+## Contributing
 
-With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-### Android
+## License
 
-```sh
-# Using npm
-npm run android
-
-# OR using Yarn
-yarn android
-```
-
-### iOS
-
-For iOS, remember to install CocoaPods dependencies (this only needs to be run on first clone or after updating native deps).
-
-The first time you create a new project, run the Ruby bundler to install CocoaPods itself:
-
-```sh
-bundle install
-```
-
-Then, and every time you update your native dependencies, run:
-
-```sh
-bundle exec pod install
-```
-
-For more information, please visit [CocoaPods Getting Started guide](https://guides.cocoapods.org/using/getting-started.html).
-
-```sh
-# Using npm
-npm run ios
-
-# OR using Yarn
-yarn ios
-```
-
-If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
-
-This is one way to run your app — you can also build it directly from Android Studio or Xcode.
-
-## Step 3: Modify your app
-
-Now that you have successfully run the app, let's make changes!
-
-Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
-
-When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
-
-- **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
-- **iOS**: Press <kbd>R</kbd> in iOS Simulator.
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
